@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/main_dark"
+    android:id="@+id/mContainer"
+    android:orientation="vertical"
+    tools:context=".PlayerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/player_top_btn"
+        android:layout_alignParentTop="true"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/player_close"
+            android:id="@+id/player_close"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/music_header"
+            android:text="@string/player_header"
+            android:layout_centerVertical="true"
+            android:textColor="@color/dark_text_color"
+            android:layout_toEndOf="@+id/player_close"
+            android:gravity="center_horizontal"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/menu_v"
+            android:id="@+id/player_more"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_below="@+id/player_top_btn"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/center_block"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="@string/song"
+            android:gravity="center_horizontal"
+            android:id="@+id/song_end_lyric"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/song_end_lyric"
+            android:textSize="15dp"
+            android:text="|"
+            android:gravity="center_horizontal"
+            android:id="@+id/song_e"/>
+
+        <ImageView
+            android:layout_below="@+id/song_end_lyric"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_round"
+            android:id="@+id/player_mus_img"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center_block"
+        android:text="@string/Song_name"
+        android:id="@+id/song_name"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:layout_marginTop="47dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="35dp"
+        android:textSize="23dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/song_name"
+        android:text="@string/song_artist"
+        android:id="@+id/author_name"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="10dp"
+        android:textSize="11dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/sort_m"
+            android:layout_marginStart="42dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/sort"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/shuffle_icon"
+            android:layout_marginStart="42dp"
+            android:layout_toEndOf="@+id/sort"
+            android:id="@+id/shuffle"
+            android:layout_centerVertical="true"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

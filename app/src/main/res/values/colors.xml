@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "black">#FF000000</color>
+    <color name = "white">#FFFFFFFF</color>
+    <color name = "main_dark">#2F2F2F</color>
+    <color name = "main_white">#F3F3F3</color>
+    <color name = "player_dark">#161616</color>
+    <color name = "player_btn_dark">#FFFFFF</color>
+    <color name ="player_white">#ABABAB</color>
+    <color name = "player_btn_white">#212121</color>
+    <color name="dark_text_color">#ECECEC</color>
+</resources>

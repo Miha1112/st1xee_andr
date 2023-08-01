@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">St1xee</string>
+    <string name="def_email_str"> Enter your email here </string>
+    <string name="def_send_text"> Send </string>
+    <string name="player_header">Music Player</string>
+    <string name="Song_name">This is song name</string>
+    <string name="song_artist">This is song artist name</string>
+    <string name="song">Song</string>
+    <string name="lyric">Lyric</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
